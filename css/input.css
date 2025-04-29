@@ -2,45 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.animate-none {
-    animation: none;
-    width: auto;
-  }
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-marquee {
-  will-change: transform;
-  animation: marquee 20s linear infinite;
-  width: 100%;
-}
-
-.partners-img {
-  max-width: 49px;
-  height: 27px;
-}
-
-@media (min-width: 1024px) {
-  .partners-img {
-    max-width: 139px;
-    height: 78px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .animate-none {
-    animation: none;
-    width: auto;
-  }
-}
-
 /* Font faces */
 @font-face {
     font-family: 'Nimbus Sans L';
@@ -77,3 +38,17 @@
 .custom-font{
     font-family: Nimbus Sans L;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  
+@media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+    }
+  }
